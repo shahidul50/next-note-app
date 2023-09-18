@@ -7,8 +7,8 @@ import { Toaster } from 'react-hot-toast';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Todo App',
-  description: 'Todo Allication',
+  title: 'Note App',
+  description: 'Note Allication',
 }
 
 export default function RootLayout({ children }) {
