@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,31 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+*{
+  box-sizing: border-box;
+}
+.hover a:hover{
+  border-bottom: 5px solid rgb(6, 151, 30);
+}
+.navdp{
+  cursor: pointer;
+  position: relative;
+}
+.navdp img{
+  border-radius: 100%;
+}
+.navdp .profile-drop{
+  width:120px;
+  background-color: rgb(93, 245, 138);
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+  top:40px;
+  border-radius: 5px 0px 5px 5px;
+  display: none;
+}
+
+.navdp:hover .profile-drop{
+  display: inline-block;
 }
