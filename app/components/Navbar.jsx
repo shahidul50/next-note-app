@@ -22,7 +22,7 @@ const Navbar = async () => {
     <nav className="container mx-auto flex flex-col items-center justify-center sm:flex-row sm:justify-between bg-green-400 py-4 px-3 ">
       <div className="font-bold text-xl uppercase mb-4"><Link href="/">Notes App</Link></div>
       <div className="flex flex-col items-center justify-center sm:flex-row gap-4 hover">
-        <Link href="/">Home</Link>
+        <Link href="/" >Home</Link>
         {session?.user && <Link href="/add-note">Add Note</Link>}
         
         <Link href="/about">About</Link>

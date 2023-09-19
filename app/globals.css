@@ -43,7 +43,7 @@ body {
   background-color: rgb(93, 245, 138);
   padding: 10px;
   position: absolute;
-  right: 0px;
+  right: 10px;
   top:40px;
   border-radius: 5px 0px 5px 5px;
   display: none;

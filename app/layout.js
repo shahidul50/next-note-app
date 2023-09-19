@@ -17,8 +17,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NextAuthProvider>
           <Navbar />
-          {children}
-           <Toaster  position="bottom-right" toastOptions={{duration: 5000,style: {background: '#b8e47f', color: '#000',},}}/>
+          <div className='w-80 sm:w-5/6 md:w-4/6 lg:w-2/4 mx-auto'>
+            {children}
+          </div>
+          <Toaster position="bottom-right" toastOptions={{ duration: 5000, style: { background: '#b8e47f', color: '#000', }, }} />
         </NextAuthProvider>
       </body>
     </html>

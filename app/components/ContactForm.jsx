@@ -42,16 +42,16 @@ const ContactForm = () => {
        }
   }
   return (
-    <>
+    <div>
     <form className="pb-3 mt-4 border-t flex flex-col gap-5" onSubmit={handleSubmit}>
       <div className='flex flex-col'>
         <label className='py-3 text-xl' htmlFor="name">Name</label>
-        <input  type="text" id="name" className='border rounded-md border-slate-500 px-2 py-2 w-full' placeholder="enter your name" value={name} onChange={(e)=> setName(e.target.value)}/>
+        <input  type="text" id="name" className='border rounded-md border-slate-500 px-2 py-2 w-full ' placeholder="enter your name" value={name} onChange={(e)=> setName(e.target.value)}/>
       </div>
 
       <div className='flex flex-col'>
         <label className='pb-2 text-xl' htmlFor="email">Email</label>
-        <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} className='border rounded-md border-slate-500 px-2 py-2 w-full' id="email" placeholder="enter your email" />
+        <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} className='border rounded-md border-slate-500 px-2 py-2 w-full ' id="email" placeholder="enter your email" />
       </div>
 
       <div  className='flex flex-col'>
@@ -63,7 +63,7 @@ const ContactForm = () => {
         Send
       </button>
     </form>
-  </>
+  </div>
   )
 }
 

@@ -37,11 +37,11 @@ const AddNoteForm = ({userId}) => {
         }
     }
   return (
-    <>
+    <div className="mt-5">
       <h1 className="text-center text-3xl font-bold mb-4 underline">
         Add New Note
       </h1>
-      <div className="p-4">
+      <div className="">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col">
             <label htmlFor="title" className="py-3 text-xl">
@@ -75,7 +75,7 @@ const AddNoteForm = ({userId}) => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

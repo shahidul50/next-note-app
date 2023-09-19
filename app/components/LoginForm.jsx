@@ -5,7 +5,7 @@ import React from 'react'
 
 const LoginForm = () => {
   return (
-    <div className='w-96 md:w-2/4 lg:w-1/4  mx-auto mt-10'>
+    <div className='mt-5'>
       <h1 className='text-center text-3xl font-bold mb-4 underline'> Login</h1>
       {/* <form>
             <div className='flex flex-col'>
@@ -23,8 +23,8 @@ const LoginForm = () => {
                 </button>
             </div>
       </form> */}
-        <div className='mt-2'>
-          <button onClick={() => signIn('google')} className="bg-blue-300 p-3 text-white w-full flex justify-center hover:bg-blue-500">
+        <div className='mt-2 flex justify-center'>
+          <button onClick={() => signIn('google')} className="bg-blue-300 px-8 py-3 text-white flex justify-center items-center hover:bg-blue-500">
             <Image src="/google-logo.png" width={30} height={30} className='pr-2' alt='google'/>
             Login with google
             </button>

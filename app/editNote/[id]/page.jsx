@@ -16,7 +16,7 @@ const EditNote = async({params}) => {
   const { id } = params;
   const { note } = await getNoteById(id);
   return (
-    <div className='w-96 md:w-2/4 lg:w-2/4  mx-auto mt-10'>
+    <div className='mt-5'>
     <h1 className='text-center text-3xl font-bold mb-4 underline'>Update Your Note</h1>
     <EditNoteForm id={id} note={note}/>
   </div>

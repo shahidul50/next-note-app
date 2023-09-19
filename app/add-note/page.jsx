@@ -9,7 +9,7 @@ const AddNote = async () => {
   return (
     <>
       {session?.user ? (
-        <div className="w-96 md:w-2/4 lg:w-2/4  mx-auto mt-10">
+        <div>
              <AddNoteForm  userId={userId}/>
         </div>
       ) : (

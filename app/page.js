@@ -46,12 +46,11 @@ export default async function Home() {
   }
 
   return (
-    <main className='w-11/12 sm:w-3/4 md:w-4/6 mx-auto'>
+    <main>
       {session?.user ? ( 
         getNote(reverseNote) 
       ) : <Login />
       }
-
     </main>
   )
 }

@@ -7,7 +7,7 @@ const Profile = async () => {
   return (
     <>
       {session?.user ? (
-        <div className="w-96 md:w-2/4 lg:w-1/4  mx-auto mt-10">
+        <div className="mt-5">
           <h1 className="text-center text-3xl font-bold mb-4 underline">
             Update your Profile
           </h1>
